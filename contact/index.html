@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemal Das | Contact Me - Master Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../images/logo1.jpg" type="image/x-icon">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="/"><img src="/images/logo2.jpg" alt="Logo"></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/index.html"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="/about/index.html"><i class="fas fa-user"></i>About</a></li>
+                <li><a href="/projects/index.html"><i class="fas fa-code-branch"></i>Projects</a></li>
+                <li><a href="/services/index.html"><i class="fas fa-cogs"></i>Services</a></li>
+                <li><a href="/contact/index.html" class="active"><i class="fas fa-envelope"></i>Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <!-- Header -->
+            <div class="section-header">
+                <span class="subtitle">Get In Touch</span>
+                <h1>Contact <span class="highlight">Me</span></h1>
+                <div class="header-line"></div>
+                <p class="header-description">Have a project in mind? Let's work together to create something amazing!</p>
+            </div>
+
+            <div class="contact-content">
+                <!-- Left Side - Contact Info Cards -->
+                <div class="contact-info-side">
+                    <div class="info-card featured">
+                        <div class="card-icon">
+                            <i class="fas fa-paper-plane"></i>
+                        </div>
+                        <h3>Let's Connect</h3>
+                        <p>I'm always interested in hearing about new projects and opportunities. Feel free to reach out!</p>
+                    </div>
+
+                    <!-- Contact Methods -->
+                    <div class="contact-methods">
+                        <div class="method-card">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-details">
+                                <h4>Email Me</h4>
+                                <a href="mailto:dashemal08@gmail.com">dashemal08@gmail.com</a>
+                                <p class="response-time">⏱️ Replies within 24 hours</p>
+                            </div>
+                        </div>
+
+                        <div class="method-card">
+                            <div class="method-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="method-details">
+                                <h4>Call Me</h4>
+                                <a href="tel:+1234567890">+8801314726844</a>
+                                <p class="response-time">📞 Mon-Fri, 9AM-6PM</p>
+                            </div>
+                        </div>
+
+                        <div class="method-card">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-details">
+                                <h4>Location</h4>
+                                <p>Chattogram, BD</p>
+                                <p class="response-time">🌍 Available for remote work</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="social-section">
+                        <h3>Follow Me</h3>
+                        <div class="social-links-grid">
+                            <a href="https://github.com/HemalDas666" class="social-card">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/hemal-das-29b265281/" class="social-card">
+                                <i class="fab fa-linkedin-in"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://www.facebook.com/profile.php?id=61583889333707" class="social-card">
+                                <i class="fab fa-facebook"></i>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="#" class="social-card">
+                                <i class="fab fa-codepen"></i>
+                                <span>CodePen</span>
+                            </a>
+                            <a href="#" class="social-card">
+                                <i class="fab fa-dev"></i>
+                                <span>Dev.to</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Availability Status -->
+                    <div class="availability-card">
+                        <div class="status-indicator">
+                            <span class="pulse"></span>
+                            <span class="status-text">Available for freelance work</span>
+                        </div>
+                        <div class="availability-timer">
+                            <i class="fas fa-clock"></i>
+                            <span id="currentTime"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side - Contact Form -->
+                <div class="contact-form-side">
+                    <div class="form-container">
+                        <h2>Send Me a Message</h2>
+                        <p>Fill out the form below and I'll get back to you as soon as possible.</p>
+
+                        <form id="contactForm" action="https://formsubmit.co/dashemal08@gmail.com" method="POST">
+                            <!-- FormSubmit.co configuration -->
+                            <input type="hidden" name="_subject" value="New Contact Form Submission from Portfolio">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="https://yourdomain.com/contact/success.html">
+                            
+                            <!-- Honeypot to prevent spam -->
+                            <input type="text" name="_honey" style="display:none">
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name"><i class="fas fa-user"></i> Your Name</label>
+                                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email"><i class="fas fa-envelope"></i> Your Email</label>
+                                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone"><i class="fas fa-phone"></i> Phone Number (Optional)</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="+1 234 567 890">
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject"><i class="fas fa-tag"></i> Subject</label>
+                                    <select id="subject" name="subject" required>
+                                        <option value="" disabled selected>Select a subject</option>
+                                        <option value="Project Inquiry">Project Inquiry</option>
+                                        <option value="Collaboration">Collaboration</option>
+                                        <option value="General Question">General Question</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="message"><i class="fas fa-comment"></i> Your Message</label>
+                                <textarea id="message" name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+                            </div>
+
+                            <!-- Budget Range -->
+                            <div class="form-group full-width">
+                                <label for="budget"><i class="fas fa-dollar-sign"></i> Estimated Budget (Optional)</label>
+                                <select id="budget" name="budget">
+                                    <option value="" disabled selected>Select budget range</option>
+                                    <option value="Less than $1,000">Less than $10</option>
+                                    <option value="$1,000 - $5,000">$10 - $50</option>
+                                    <option value="$5,000 - $10,000">$50 - $100</option>
+                                    <option value="$10,000 - $25,000">$100 - $250</option>
+                                    <option value="$25,000+">$25,0+</option>
+                                </select>
+                            </div>
+
+                            <!-- File Attachment -->
+                            <div class="form-group full-width">
+                                <label for="attachment"><i class="fas fa-paperclip"></i> Attach File (Optional)</label>
+                                <div class="file-input">
+                                    <input type="file" id="attachment" name="attachment" accept=".pdf,.doc,.docx,.txt,.jpg,.png">
+                                    <span class="file-label">Choose file or drag here</span>
+                                </div>
+                            </div>
+
+                            <!-- Consent Checkbox -->
+                            <div class="form-group consent">
+                                <input type="checkbox" id="consent" required>
+                                <label for="consent">I agree to the <a href="#" class="privacy-link">privacy policy</a> and consent to being contacted</label>
+                            </div>
+
+                            <button type="submit" class="btn primary submit-btn" id="submitBtn">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+
+                            <div class="form-status" id="formStatus"></div>
+                        </form>
+
+                        <!-- Alternative Contact -->
+                        <div class="alt-contact">
+                            <p>Prefer email directly?</p>
+                            <a href="mailto:dashemal08@gmail.com" class="email-direct">
+                                <i class="fas fa-envelope"></i> dashemal08@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map Section (Optional) -->
+            <div class="map-section">
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10000!2d91.83892418449291!3d22.38107222826422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDIyJzUxLjkiTiA5McKwNTAnMjAuMSJF!5e1!3m2!1sen!2s!4v1644262073400!5m2!1sen!2s" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="faq-container">
+            <div class="section-header">
+                <h2>Frequently Asked <span class="highlight">Questions</span></h2>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is your typical response time?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>I usually respond within 24 hours during weekdays. For urgent matters, it's best to reach out via email directly.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you work with international clients?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! I work with clients from all over the world. Time zones are never a barrier.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What information should I include in my inquiry?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Please include your project idea, timeline, budget range, and any specific requirements you have in mind.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer maintenance after project completion?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, I offer maintenance packages and ongoing support for all my projects. We can discuss this during our call.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Portfolio. All rights reserved to Hemal Das.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

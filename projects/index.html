@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemal Das | Projects - Master Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/images/logo1.jpg" type="image/x-icon">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="/"><img src="/images/logo2.jpg" alt="Logo"></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/index.html"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="/about/index.html"><i class="fas fa-user"></i>About</a></li>
+                <li><a href="/" class="active"><i class="fas fa-code-branch"></i>Projects</a></li>
+                <li><a href="/services/index.html"><i class="fas fa-cogs"></i>Services</a></li>
+                <li><a href="/contact/index.html"><i class="fas fa-envelope"></i>Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+        <div class="projects-container">
+            <!-- Header -->
+            <div class="section-header">
+                <span class="subtitle">My Work</span>
+                <h1>Featured <span class="highlight">Projects</span></h1>
+                <div class="header-line"></div>
+                <p class="header-description">Here are some of my best projects that showcase my skills and creativity</p>
+            </div>
+
+            <!-- GitHub Stats Bar -->
+            <div class="github-stats">
+                <div class="github-card">
+                    <i class="fab fa-github"></i>
+                    <div class="github-info">
+                        <h3>GitHub Statistics</h3>
+                        <div class="stats-grid">
+                            <div class="stat">
+                                <span class="stat-number" id="repos-count">10+</span>
+                                <span class="stat-label">Repositories</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number" id="commits-count">280+</span>
+                                <span class="stat-label">Commits</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number" id="stars-count">24+</span>
+                                <span class="stat-label">Stars</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number" id="forks-count">20+</span>
+                                <span class="stat-label">Forks</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://github.com/HemalDas666" target="_blank" class="github-link">
+                        View GitHub <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="python">Python</button>
+                <button class="filter-btn" data-filter="javascript">JavaScript</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- Project 2 - Python AI Assistant -->
+                <div class="project-card" data-category="python">
+                    <div class="project-image">
+                        <img src="ss/Project1.png" alt="AI Assistant" onerror="this.src='https://via.placeholder.com/600x400/1a1a2e/ffd700?text=AI+Assistant'">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-info-circle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AI Voice Assistant</h3>
+                        <p>Python-based AI assistant using natural language processing. Can perform tasks, answer questions, and control smart home devices.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>NLP</span>
+                            <span>Flask</span>
+                        </div>
+                        <div class="project-meta">
+                            <span><i class="far fa-star"></i> 78 stars</span>
+                            <span><i class="fas fa-code-branch"></i> 23 forks</span>
+                            <span><i class="far fa-clock"></i> Updated 1 week ago</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn small primary">Live Demo</a>
+                            <a href="#" class="btn small outline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 - JavaScript Dashboard -->
+                <div class="project-card" data-category="web javascript">
+                    <div class="project-image">
+                        <img src="ss/project2.png" alt="EPIC WEBSITE" onerror="this.src='https://via.placeholder.com/600x400/1a1a2e/ffd700?text=Analytics+Dashboard'">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-info-circle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>EPIC WEBSITE</h3>
+                        <p>Interactive dashboard with real-time data visualization using D3.js and Chart.js. Features customizable widgets and dark mode.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>D3.js</span>
+                            <span>Chart.js</span>
+                            <span>CSS Grid</span>
+                        </div>
+                        <div class="project-meta">
+                            <span><i class="far fa-star"></i> 34 stars</span>
+                            <span><i class="fas fa-code-branch"></i> 8 forks</span>
+                            <span><i class="far fa-clock"></i> Updated 3 days ago</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://elegant-bombolone-863208.netlify.app/" target="main" class="btn small primary">Live Demo</a>
+                            <a href="https://github.com/HemalDas666/darkknight-smp" class="btn small outline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 - Full Stack Social App -->
+                <div class="project-card" data-category="fullstack javascript">
+                    <div class="project-image">
+                        <img src="images/project4.jpg" alt="IMEI-TRACKER" onerror="this.src='https://via.placeholder.com/600x400/1a1a2e/ffd700?text=Social+App'">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-info-circle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>IMEI-TRACKER</h3>
+                        <p>Full-stack social media platform with real-time messaging, posts, likes, and comments using MERN stack.</p>
+                        <div class="project-tech">
+                            <span>MongoDB</span>
+                            <span>Express</span>
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Socket.io</span>
+                        </div>
+                        <div class="project-meta">
+                            <span><i class="far fa-star"></i> 92 stars</span>
+                            <span><i class="fas fa-code-branch"></i> 27 forks</span>
+                            <span><i class="far fa-clock"></i> Updated 5 days ago</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn small primary">Live Demo</a>
+                            <a href="#" class="btn small outline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 - Python Web Scraper -->
+                <div class="project-card" data-category="python">
+                    <div class="project-image">
+                        <img src="images/project5.jpg" alt="Web Scraper" onerror="this.src='https://via.placeholder.com/600x400/1a1a2e/ffd700?text=Web+Scraper'">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-info-circle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>DataScraper Pro</h3>
+                        <p>Advanced web scraping tool with GUI, supporting multiple websites, data export, and scheduling features.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>BeautifulSoup</span>
+                            <span>Selenium</span>
+                            <span>PyQt5</span>
+                        </div>
+                        <div class="project-meta">
+                            <span><i class="far fa-star"></i> 56 stars</span>
+                            <span><i class="fas fa-code-branch"></i> 15 forks</span>
+                            <span><i class="far fa-clock"></i> Updated 2 weeks ago</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn small primary">Live Demo</a>
+                            <a href="#" class="btn small outline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 - Portfolio Template -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="images/project6.jpg" alt="Portfolio Template" onerror="this.src='https://via.placeholder.com/600x400/1a1a2e/ffd700?text=Portfolio+Template'">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-info-circle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>DevPortfolio Pro</h3>
+                        <p>Modern, responsive portfolio template for developers with dark mode, animations, and CMS integration.</p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>GSAP</span>
+                        </div>
+                        <div class="project-meta">
+                            <span><i class="far fa-star"></i> 112 stars</span>
+                            <span><i class="fas fa-code-branch"></i> 45 forks</span>
+                            <span><i class="far fa-clock"></i> Updated 1 day ago</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn small primary">Live Demo</a>
+                            <a href="#" class="btn small outline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GitHub Repositories Section -->
+            <div class="github-repos-section">
+                <div class="section-header">
+                    <h2><i class="fab fa-github"></i> My <span class="highlight">GitHub</span> Repositories</h2>
+                    <p>Here you can add your actual GitHub repositories</p>
+                </div>
+
+                <!-- Add Repo Form (For You to Add Your Repos) -->
+                <div class="add-repo-form">
+                    <h3>Add Your Repository</h3>
+                    <form id="repoForm">
+                        <div class="form-group">
+                            <input type="text" id="repoName" placeholder="Repository Name" required>
+                            <input type="text" id="repoUrl" placeholder="GitHub URL" required>
+                            <input type="text" id="repoDesc" placeholder="Short Description">
+                            <select id="repoLanguage">
+                                <option value="HTML">HTML/CSS</option>
+                                <option value="JavaScript">JavaScript</option>
+                                <option value="Python">Python</option>
+                                <option value="Full Stack">Full Stack</option>
+                            </select>
+                            <button type="submit" class="btn primary">Add Repo</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Repositories Grid (Dynamic) -->
+                <div class="repos-grid" id="reposGrid">
+                    <!-- Repos will be added here dynamically via JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Portfolio. All rights reserved to Hemal Das.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

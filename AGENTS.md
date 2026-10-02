@@ -10,10 +10,12 @@ Read this first. Keep it updated after every work session.
 - Owner: **Hemal Das** — full stack developer, Chattogram BD
 - GitHub: `HemalDas666` · Email: dashemal08@gmail.com
 - Stack: static HTML/CSS/JS (no build step, no frameworks, no npm)
-- Hosting target: GitHub Pages (all paths are **relative** — keep them that way)
-- Canonical base URL: `https://hemaldas666.github.io/My-Portfolio/`
+- Hosting: **Netlify** (`https://hemalsportfolio.netlify.app/`) — auto-deploys
+  whenever `main` is pushed to the GitHub repo `HemalDas666/My-Portfolio`
+  (all paths are **relative** — keep them that way)
+- Canonical base URL: `https://hemalsportfolio.netlify.app`
   (⚠️ update all `canonical`/`og:url`/JSON-LD/`sitemap.xml`/`robots.txt`
-  occurrences if the real URL differs)
+  occurrences if the domain ever changes)
 - Local test: `python -m http.server 8000`
 - JS syntax check: `node --check <file.js>`
 
@@ -96,9 +98,10 @@ Read this first. Keep it updated after every work session.
 - [x] Structure/docs: ARCHITECTURE.md, AGENTS.md
 
 ### ▶ Next (do these)
-- [ ] Deploy to GitHub Pages (repo → Settings → Pages → main branch)
-- [ ] **Verify canonical URL** matches the real deployed URL (search-replace
-      `hemaldas666.github.io/My-Portfolio` everywhere if different)
+- [ ] Push to `main` → Netlify auto-deploys (else Netlify UI →
+      Deploys → Trigger deploy)
+- [ ] **Verify live site** `https://hemalsportfolio.netlify.app` shows the
+      new version (title: "Hemal Das | Full Stack Developer")
 - [ ] Submit sitemap in Google Search Console
 - [ ] Click FormSubmit activation link in your inbox (one-time)
 - [ ] Add "Hemal Das" + portfolio link to GitHub profile bio

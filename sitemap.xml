@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://hemaldas666.github.io/My-Portfolio/</loc>
+        <loc>https://hemalsportfolio.netlify.app/</loc>
         <lastmod>2026-10-02</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://hemaldas666.github.io/My-Portfolio/about/</loc>
+        <loc>https://hemalsportfolio.netlify.app/about/</loc>
         <lastmod>2026-10-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://hemaldas666.github.io/My-Portfolio/projects/</loc>
+        <loc>https://hemalsportfolio.netlify.app/projects/</loc>
         <lastmod>2026-10-02</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://hemaldas666.github.io/My-Portfolio/services/</loc>
+        <loc>https://hemalsportfolio.netlify.app/services/</loc>
         <lastmod>2026-10-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://hemaldas666.github.io/My-Portfolio/contact/</loc>
+        <loc>https://hemalsportfolio.netlify.app/contact/</loc>
         <lastmod>2026-10-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>

@@ -2,7 +2,7 @@
 
 Personal portfolio of **Hemal Das**, full stack developer from Chattogram, Bangladesh.
 
-**Live site (after deploy):** https://hemaldas666.github.io/My-Portfolio/
+**Live site (after deploy):** https://hemalsportfolio.netlify.app/
 
 ## What's inside
 

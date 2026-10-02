@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hemaldas666.github.io/My-Portfolio/sitemap.xml
+Sitemap: https://hemalsportfolio.netlify.app/sitemap.xml

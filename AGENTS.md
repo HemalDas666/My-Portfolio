@@ -37,6 +37,21 @@ Read this first. Keep it updated after every work session.
 
 ## Change Log
 
+### 2026-10-02 — SEO ranking pass (invisible, no UI changes)
+
+- All 5 pages: titles/descriptions/keywords re-targeted for trending queries
+  (`web developer`, `programmer`, `hire developer`, `Hemal Das`); added
+  `robots` meta (`max-image-preview:large`), `og:locale`.
+- JSON-LD upgraded on every page: Person (+`hasOccupation`,
+  `knowsAbout` ×19, description, phone), WebSite (new name/description),
+  BreadcrumbList (4 subpages), WebPage (home), **FAQPage** (contact —
+  matches the 4 visible FAQs), **ItemList of 6 services with USD prices**
+  (services — matches visible pricing).
+- Canonical/OG/Twitter/JSON-LD/sitemap/robots all point to
+  `https://hemalsportfolio.netlify.app` (Netlify deploy).
+- Verified: JSON-LD parses ×5, sitemap XML valid, titles 52–60 chars,
+  0 `github.io` leftovers.
+
 ### 2026-10-02 — Full live upgrade (major rewrite)
 
 **Added**

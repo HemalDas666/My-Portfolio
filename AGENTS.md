@@ -11,7 +11,7 @@ Read this first. Keep it updated after every work session.
 - GitHub: `HemalDas666` · Email: dashemal08@gmail.com
 - Stack: static HTML/CSS/JS (no build step, no frameworks, no npm)
 - Hosting target: GitHub Pages (all paths are **relative** — keep them that way)
-- Canonical base URL: `https://hemaldas666.github.io/Portfolio-H/`
+- Canonical base URL: `https://hemaldas666.github.io/My-Portfolio/`
   (⚠️ update all `canonical`/`og:url`/JSON-LD/`sitemap.xml`/`robots.txt`
   occurrences if the real URL differs)
 - Local test: `python -m http.server 8000`
@@ -98,7 +98,7 @@ Read this first. Keep it updated after every work session.
 ### ▶ Next (do these)
 - [ ] Deploy to GitHub Pages (repo → Settings → Pages → main branch)
 - [ ] **Verify canonical URL** matches the real deployed URL (search-replace
-      `hemaldas666.github.io/Portfolio-H` everywhere if different)
+      `hemaldas666.github.io/My-Portfolio` everywhere if different)
 - [ ] Submit sitemap in Google Search Console
 - [ ] Click FormSubmit activation link in your inbox (one-time)
 - [ ] Add "Hemal Das" + portfolio link to GitHub profile bio

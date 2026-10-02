@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hemaldas666.github.io/Portfolio-H/sitemap.xml

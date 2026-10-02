@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You're Offline | Hemal Das Portfolio</title>
+    <meta name="robots" content="noindex">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            color: rgba(255, 255, 255, 0.88);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .card {
+            max-width: 460px;
+            width: 100%;
+            padding: 2.5rem 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 215, 0, 0.25);
+            border-radius: 22px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+        }
+
+        .offline-art {
+            position: relative;
+            width: 110px;
+            height: 110px;
+            margin: 0 auto 1.4rem;
+        }
+
+        .offline-art .cloud {
+            position: absolute;
+            bottom: 14px;
+            left: 50%;
+            width: 84px;
+            height: 42px;
+            background: rgba(255, 255, 255, 0.14);
+            border-radius: 42px;
+            transform: translateX(-50%);
+            animation: floaty 3s ease-in-out infinite;
+        }
+
+        .offline-art .cloud::before,
+        .offline-art .cloud::after {
+            content: '';
+            position: absolute;
+            background: rgba(255, 255, 255, 0.14);
+            border-radius: 50%;
+        }
+
+        .offline-art .cloud::before {
+            width: 44px;
+            height: 44px;
+            top: -20px;
+            left: 12px;
+        }
+
+        .offline-art .cloud::after {
+            width: 30px;
+            height: 30px;
+            top: -12px;
+            right: 12px;
+        }
+
+        .offline-art .zzz {
+            position: absolute;
+            top: 4px;
+            right: 2px;
+            color: #ffd700;
+            font-weight: 700;
+            font-size: 1.1rem;
+            animation: zzzbob 2.2s ease-in-out infinite;
+        }
+
+        @keyframes zzzbob {
+            0%, 100% { transform: translateY(0); opacity: 0.7; }
+            50% { transform: translateY(-6px); opacity: 1; }
+        }
+
+        .offline-art .slash {
+            position: absolute;
+            top: 8px;
+            left: 10px;
+            font-size: 1.7rem;
+            color: #ff6b6b;
+            transform: rotate(-12deg);
+            animation: nudge 1.6s ease-in-out infinite;
+        }
+
+        @keyframes floaty {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(-7px); }
+        }
+
+        @keyframes nudge {
+            0%, 100% { transform: rotate(-12deg) scale(1); }
+            50% { transform: rotate(-12deg) scale(1.15); }
+        }
+
+        h1 {
+            font-size: clamp(1.6rem, 5vw, 2.2rem);
+            color: #ffd700;
+            margin-bottom: 0.7rem;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 0.98rem;
+            color: rgba(255, 255, 255, 0.75);
+            margin-bottom: 0.5rem;
+        }
+
+        .hint {
+            font-size: 0.85rem;
+            color: rgba(255, 215, 0, 0.75);
+            margin: 1rem 0 1.6rem;
+        }
+
+        .actions {
+            display: flex;
+            gap: 0.8rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: 999px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .btn:hover { transform: translateY(-2px); }
+        .btn:active { transform: translateY(0); }
+
+        .btn-retry {
+            background: linear-gradient(90deg, #ffd700, #ffb347);
+            color: #1a1a2e;
+            box-shadow: 0 8px 22px rgba(255, 215, 0, 0.3);
+        }
+
+        .btn-back {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+        }
+
+        footer {
+            margin-top: 1.6rem;
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.45);
+        }
+    </style>
+</head>
+<body>
+    <!-- Self-contained offline page: no external fonts, icons or scripts. -->
+    <main class="card">
+        <div class="offline-art" aria-hidden="true">
+            <div class="cloud"></div>
+            <span class="zzz">ZzZ</span>
+            <span class="slash">&#128246;</span>
+        </div>
+        <h1>You're Offline</h1>
+        <p>Don't worry — your connection is just taking a little nap.</p>
+        <p>My code still works, but live GitHub data and page downloads need internet.</p>
+        <div class="hint">Tip: pages you already visited can still be opened.</div>
+        <div class="actions">
+            <button class="btn btn-retry" onclick="location.reload()">&#128260; Try Again</button>
+            <button class="btn btn-back" onclick="history.length > 1 ? history.back() : location.href = './'">&#8592; Go Back</button>
+        </div>
+        <footer>Hemal Das &copy; 2026 &mdash; Full Stack Developer</footer>
+    </main>
+</body>
+</html>

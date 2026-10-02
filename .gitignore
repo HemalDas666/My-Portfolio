@@ -1,0 +1,13 @@
+# OS
+Thumbs.db
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Node (not used, safety)
+node_modules/

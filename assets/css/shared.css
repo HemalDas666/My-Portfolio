@@ -1,0 +1,257 @@
+/* shared.css — loading screen, offline banner, live ticker, nav scroll
+   state and reveal animations used by every page of the portfolio. */
+
+:root {
+    --hd-bg-1: #0f0c29;
+    --hd-bg-2: #302b63;
+    --hd-bg-3: #24243e;
+    --hd-gold: #ffd700;
+    --hd-text: rgba(255, 255, 255, 0.85);
+}
+
+html.preloading,
+html.preloading body {
+    overflow: hidden;
+}
+
+/* ---------- Loading screen ---------- */
+.preloader {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--hd-bg-1) 0%, var(--hd-bg-2) 50%, var(--hd-bg-3) 100%);
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.preloader.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.preloader-inner {
+    text-align: center;
+    padding: 2rem;
+}
+
+.preloader-logo {
+    font-size: clamp(3rem, 10vw, 4.5rem);
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    background: linear-gradient(90deg, var(--hd-gold), #ff8c00, var(--hd-gold));
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: hd-shimmer 2.2s linear infinite;
+    transform: translateZ(0);
+}
+
+@keyframes hd-shimmer {
+    to { background-position: 200% center; }
+}
+
+.preloader-bar {
+    width: min(200px, 60vw);
+    height: 4px;
+    margin: 1.4rem auto 1rem;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.preloader-bar span {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, var(--hd-gold), #ff8c00);
+    border-radius: 999px;
+    animation: hd-loadbar 2.4s ease-in-out infinite;
+    transform: translateZ(0);
+}
+
+@keyframes hd-loadbar {
+    0%   { transform: scaleX(0); transform-origin: left; }
+    45%  { transform: scaleX(1); transform-origin: left; }
+    55%  { transform: scaleX(1); transform-origin: right; }
+    100% { transform: scaleX(0); transform-origin: right; }
+}
+
+.preloader-text {
+    color: var(--hd-text);
+    font-size: 1rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    animation: hd-breathe 1.8s ease-in-out infinite;
+}
+
+.preloader-sub {
+    color: rgba(255, 215, 0, 0.65);
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-top: 0.4rem;
+}
+
+@keyframes hd-breathe {
+    0%, 100% { opacity: 0.55; }
+    50% { opacity: 1; }
+}
+
+/* ---------- Offline banner ---------- */
+.offline-toast {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.6rem 1.2rem;
+    background: #2b1d4f;
+    color: #ffe9a8;
+    border: 1px solid rgba(255, 215, 0, 0.4);
+    border-top: none;
+    border-radius: 0 0 14px 14px;
+    font-size: 0.9rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+    transform: translate(-50%, -120%);
+    transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+    pointer-events: none;
+}
+
+.offline-toast.show {
+    transform: translate(-50%, 0);
+}
+
+.offline-toast i {
+    color: var(--hd-gold);
+}
+
+.main-nav.scrolled {
+    background: rgba(15, 15, 30, 0.97) !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5) !important;
+}
+
+.live-ticker {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.1rem;
+}
+
+.ticker-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.4rem 0.85rem;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 215, 0, 0.25);
+    border-radius: 999px;
+    font-size: 0.82rem;
+    color: var(--hd-text);
+    white-space: nowrap;
+}
+
+.ticker-item i {
+    color: var(--hd-gold);
+}
+
+.ticker-item b {
+    color: var(--hd-gold);
+    font-variant-numeric: tabular-nums;
+}
+
+.reveal-ready {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    will-change: opacity, transform;
+}
+
+.reveal-ready.revealed {
+    opacity: 1;
+    transform: translateY(0);
+    will-change: auto;
+}
+
+.github-info .live-badge {
+    display: inline-block;
+    margin-left: 0.5rem;
+    padding: 0.15rem 0.55rem;
+    background: rgba(0, 230, 118, 0.12);
+    border: 1px solid rgba(0, 230, 118, 0.45);
+    border-radius: 999px;
+    color: #6effa0;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    vertical-align: middle;
+}
+
+.language-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 2px;
+    vertical-align: middle;
+}
+
+.repo-image-fallback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    width: 100%;
+    height: 100%;
+    min-height: 180px;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+    color: var(--hd-gold);
+    text-align: center;
+    padding: 1rem;
+    word-break: break-all;
+}
+
+.repo-image-fallback i {
+    font-size: 2.4rem;
+}
+
+.repo-image-fallback span {
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+@media (min-width: 1700px) {
+    .nav-container,
+    .home-content,
+    .about-container,
+    .projects-container,
+    .services-container,
+    .contact-container,
+    .faq-container,
+    .footer-content {
+        max-width: 1500px;
+    }
+}
+
+/* ---------- Accessibility: respect reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .reveal-ready {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}

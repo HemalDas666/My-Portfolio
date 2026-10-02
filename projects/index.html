@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects by Hemal Das | Python, React &amp; Full Stack Developer</title>
+    <meta name="description" content="Live GitHub projects by Hemal Das — chat apps, hosting panels, Python tools and full stack web applications, fetched in realtime from GitHub.">
+    <meta name="author" content="Hemal Das">
+    <meta name="keywords" content="Hemal Das projects, Hemal developer, GitHub portfolio, Python projects, React projects, full stack">
+    <link rel="canonical" href="https://hemaldas666.github.io/Portfolio-H/projects/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Projects by Hemal Das | Full Stack Developer">
+    <meta property="og:description" content="Realtime GitHub projects of Hemal Das — Python, JavaScript and full stack work.">
+    <meta property="og:url" content="https://hemaldas666.github.io/Portfolio-H/projects/">
+    <meta property="og:image" content="https://hemaldas666.github.io/Portfolio-H/images/logo2.jpg">
+    <meta property="og:site_name" content="Hemal Das Portfolio">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Projects by Hemal Das | Full Stack Developer">
+    <meta name="twitter:description" content="Realtime GitHub projects of Hemal Das — Python, JavaScript and full stack work.">
+    <meta name="twitter:image" content="https://hemaldas666.github.io/Portfolio-H/images/logo2.jpg">
+    <meta name="theme-color" content="#0f0c29">
+    <meta name="color-scheme" content="dark">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/css/shared.css">
+    <link rel="shortcut icon" href="../images/logo1.jpg" type="image/jpeg">
+    <link rel="apple-touch-icon" href="../images/logo1.jpg">
+    <script>
+        document.documentElement.classList.add('preloading');
+        setTimeout(function () {
+            var p = document.getElementById('preloader');
+            if (p && !p.classList.contains('is-hidden')) {
+                p.classList.add('is-hidden');
+                document.documentElement.classList.remove('preloading');
+            }
+        }, 6000);
+    </script>
+    <noscript><style>.preloader { display: none !important; }</style></noscript>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Person",
+                "@id": "https://hemaldas666.github.io/Portfolio-H/#hemal",
+                "name": "Hemal Das",
+                "alternateName": ["Hemal", "HemalDas666"],
+                "jobTitle": "Full Stack Developer",
+                "url": "https://hemaldas666.github.io/Portfolio-H/",
+                "sameAs": [
+                    "https://github.com/HemalDas666",
+                    "https://www.linkedin.com/in/hemal-das-29b265281",
+                    "https://www.facebook.com/profile.php?id=61583889333707"
+                ]
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://hemaldas666.github.io/Portfolio-H/#website",
+                "url": "https://hemaldas666.github.io/Portfolio-H/",
+                "name": "Hemal Das Portfolio",
+                "inLanguage": "en",
+                "publisher": { "@id": "https://hemaldas666.github.io/Portfolio-H/#hemal" }
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <div class="preloader" id="preloader" aria-hidden="true">
+        <div class="preloader-inner">
+            <div class="preloader-logo">HD</div>
+            <div class="preloader-bar"><span></span></div>
+            <p class="preloader-text">Hemal Das</p>
+            <p class="preloader-sub">Full Stack Developer</p>
+        </div>
+    </div>
+
+    <div class="offline-toast" id="offlineToast" role="status" aria-live="polite">
+        <i class="fas fa-wifi"></i><span>You're offline — live data paused</span>
+    </div>
+
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="../index.html"><img src="../images/logo2.jpg" alt="Hemal Das — Logo"></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="../about/index.html"><i class="fas fa-user"></i>About</a></li>
+                <li><a href="../projects/index.html" class="active"><i class="fas fa-code-branch"></i>Projects</a></li>
+                <li><a href="../services/index.html"><i class="fas fa-cogs"></i>Services</a></li>
+                <li><a href="../contact/index.html"><i class="fas fa-envelope"></i>Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="projects-section">
+        <div class="projects-container">
+            <div class="section-header">
+                <span class="subtitle">My Work</span>
+                <h1>Featured <span class="highlight">Projects</span></h1>
+                <div class="header-line"></div>
+                <p class="header-description">Live from GitHub — every repository below is updated in realtime from my profile</p>
+            </div>
+
+            <div class="github-stats">
+                <div class="github-card">
+                    <i class="fab fa-github"></i>
+                    <div class="github-info">
+                        <h3>GitHub Statistics <span class="live-badge">● Live</span></h3>
+                        <div class="stats-grid">
+                            <div class="stat">
+                                <span class="stat-number" id="repos-count">…</span>
+                                <span class="stat-label">Repositories</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number" id="followers-count">…</span>
+                                <span class="stat-label">Followers</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number" id="languages-count">…</span>
+                                <span class="stat-label">Languages</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number" id="years-count">…</span>
+                                <span class="stat-label">Years Coding</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://github.com/HemalDas666" target="_blank" rel="noopener" class="github-link">
+                        View GitHub <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="python">Python</button>
+                <button class="filter-btn" data-filter="javascript">JavaScript</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+            </div>
+
+            <div class="projects-grid" id="projectsGrid"></div>
+
+            <noscript>
+                <div class="projects-grid">
+                    <div class="project-card"><div class="project-info"><h3>Hemals-ChatApp</h3><p>Realtime chat application.</p><div class="project-actions"><a href="https://github.com/HemalDas666/Hemals-ChatApp" target="_blank" rel="noopener" class="btn small primary">GitHub</a></div></div></div>
+                    <div class="project-card"><div class="project-info"><h3>IMEI-TRACKER</h3><p>IMEI tracker tool built with Python.</p><div class="project-actions"><a href="https://github.com/HemalDas666/IMEI-TRACKER" target="_blank" rel="noopener" class="btn small primary">GitHub</a></div></div></div>
+                    <div class="project-card"><div class="project-info"><h3>Friday-Vartual-assistent</h3><p>AI assistant built with Python.</p><div class="project-actions"><a href="https://github.com/HemalDas666/Friday-Vartual-assistent" target="_blank" rel="noopener" class="btn small primary">GitHub</a></div></div></div>
+                </div>
+            </noscript>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Portfolio. All rights reserved to Hemal Das.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/core.js"></script>
+    <script src="../assets/js/github-live.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
